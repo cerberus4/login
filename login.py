@@ -39,11 +39,11 @@ def register():
     #enter password
     #count total names in user table
     #add 1 to the total and use as primary key
-    
+
 
 
 #test change
-#the program is initiated, so to speak, here
+
 menu()
 
 '''
