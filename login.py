@@ -6,7 +6,7 @@ import time
 
 #main menu prompt
 def main_menu():
-    subprocess.run(['clear'], shell=True)
+    subprocess.run(['cls'], shell=True)
 
     #print heading from text file
     h = open('banner.txt','r')   
@@ -21,15 +21,15 @@ def main_menu():
     elif entry == '3':
         print('Quitting application')
         time.sleep(2)
-        subprocess.run(['clear'], shell=True)
+        subprocess.run(['cls'], shell=True)
         sys.exit
     else:
         print('error')
         main_menu()
 #login menu
 def login():
-    #clear screen
-    subprocess.run(['clear'], shell=True)
+    #cls screen
+    subprocess.run(['cls'], shell=True)
 
     #print heading from text file
     h = open('banner.txt','r')   
@@ -50,13 +50,13 @@ def login():
         db.close
         print('Incorrect password, returning you to the main menu')
         time.sleep(2)
-        subprocess.run(['clear'], shell=True)
+        subprocess.run(['cls'], shell=True)
         main_menu()
 
 #registration menu
 def register(): 
-    #clear screen
-    subprocess.run(['clear'], shell=True)
+    #cls screen
+    subprocess.run(['cls'], shell=True)
 
     #print heading from text file
     h = open('banner.txt','r')   
